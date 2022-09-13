@@ -1,0 +1,34 @@
+create table Student1( sID number(20),sName varchar2(10),GPA number(2,1),sizeHS number(10),DOB date);
+Insert into Student1 values('123','Amy','3.9','1000','06/26/1996');
+Insert into Student1 values('234','Bob','3.6','1500','04/07/1995');
+Insert into Student1 values('345','Craig','3.5','500','02/04/1995');
+Insert into Student1 values('456','Doris','3.9','1000','07/24/1997');
+Insert into Student1 values('567','Edward','2.9','2000','12/21/1996');
+Insert into Student1 values('678','Fay','3.8','200','08/27/1996');
+Insert into Student1 values('789','Gary','3.4','800','10/08/1996');
+Insert into Student1 values('987','Helen','3.7','800','03/27/1997');
+Insert into Student1 values('876','Irene','3.9','400','03/07/1996');
+Insert into Student1 values('765','Jay','2.9','1500','08/08/1998');
+Insert into Student1 values('654','Amy','3.9','1000','05/26/1996');
+Insert into Student1 values('543','Craig','3.4','2000','08/27/1998');
+select * from Student1
+Delete from Student1 where SNAME='Ritik';
+desc Student1;
+select * from Student1 where sizeHS between 1000 and 2000;
+select * from Student1 where GPA>2.5 and GPA<3.9
+select SNAME,gpa*3 as marks from Student1 where GPA<4.0;
+
+select distinct sname from Student1
+select sname from Student1 order by sname desc
+select sname from Student1 order by sname asc
+select sname from student1 where DOB> '07/04/1995'
+select * from student1 where SNAME like '_____'
+alter table student1 modify(SNAME varchar2(50))
+desc student1
+alter table student1 add(marks number(10))
+select * from student1
+update student1 set marks=64 where sid=123
+
+
+
+

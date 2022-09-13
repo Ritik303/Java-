@@ -1,0 +1,17 @@
+Create table Student (SNAME varchar2(50),SRN number(10),Branch char(10),Section char(5),DOJ date, Marks number(10));
+
+Insert into Student values ('Ashish',001,'CEA','D','07/18/2020',70)
+Insert into Student values ('Manish',002,'CEA','D','07/19/2020',90)
+Insert into Student values ('Rohan',003,'CEA','E','07/11/2020',60)
+Insert into Student values ('Garg',004,'CEA','F','07/10/2020',50)
+Insert into Student values ('Ankit',005,'BCA','G','07/15/2020',70)
+Insert into Student values ('Khush',006,'CEA','H','07/17/2020',80)
+Insert into Student values ('Ankur',007,'ECE','H','07/17/2020',100)
+Insert into Student values ('Ritik',008,'BCA','E','07/18/2020',78)
+Insert into Student values ('Nishant',009,'ECE','E','07/18/2020',88)
+Insert into Student values ('Rolly',010,'ECE','D','07/18/2020',97)
+select * from Student;
+delete from Student where srn='1';
+Alter table Student add(DOB date);
+Alter table Student modify(SNAME varchar2(75));
+
